@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  min-height: 100vh;
+  background-color: hsl(180, 52%, 96%);
+  position: relative;
+  font-weight: 500;
+  margin-bottom: 150px;
+}
+.App-overlay {
+  height: 100px;
+  width: 100%;
+  background-image: url("./images/bg-header-mobile.svg");
+  background-color: hsl(180, 29%, 50%);
+}
+
+
+/* media query for small screens */
+@media screen (min-width: 768px) {
+  .App-overlay{
+    background-image: url("./images/bg-header-desktop.svg");
+  }
+}

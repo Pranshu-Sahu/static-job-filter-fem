@@ -1,10 +1,11 @@
 import React from "react";
-
+import { nanoid } from "nanoid";
 const SearchContainer = (props) => {
   return (
     <span className="inline-flex items-center px-2 py-1 mr-2 text-sm font-medium text-blue-800 bg-blue-100 rounded dark:bg-blue-900 dark:text-blue-300">
       {props.data}
       <button
+        key={nanoid()}
         type="button"
         className="inline-flex items-center p-0.5 ml-2 text-sm text-blue-400 bg-transparent rounded-sm hover:bg-blue-200 hover:text-blue-900 dark:hover:bg-blue-800 dark:hover:text-blue-300"
         aria-label="Remove"

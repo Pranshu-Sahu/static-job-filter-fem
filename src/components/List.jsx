@@ -44,7 +44,7 @@ const List = (props) => {
             <span>{props.location}</span>
           </div>
         </div>
-        <div className="flex w-full gap-x-2">{toolElements}</div>
+        <div className="flex gap-x-2 ml-auto">{toolElements}</div>
       </div>
     </div>
   );
